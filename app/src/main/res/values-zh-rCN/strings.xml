@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">我的理想燃料</string>
+    <string name="gas_label">每升汽油的价格</string>
+    <string name="ethanol_label">每升乙醇的价格</string>
+    <string name="fuel_label">更好用...</string>
+    <string name="gas">汽油</string>
+    <string name="ethanol">乙醇</string>
+</resources>

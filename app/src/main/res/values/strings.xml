@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Ideal Fuel</string>
+    <string name="gas_label">Price per liter of gas</string>
+    <string name="ethanol_label">Price per liter of ethanol</string>
+    <string name="fuel_label">Is better use...</string>
+    <string name="gas">Gas</string>
+    <string name="ethanol">Ethanol</string>
+</resources>

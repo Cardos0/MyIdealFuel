@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meu Combustível Ideal</string>
+    <string name="gas_label">Preço por litro de gasolina</string>
+    <string name="ethanol_label">Preço por litro de etanol</string>
+    <string name="fuel_label">É melhor usar...</string>
+    <string name="gas">Gasolina</string>
+    <string name="ethanol">Etanol</string>
+</resources>

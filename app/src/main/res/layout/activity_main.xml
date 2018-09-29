@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,28 +11,42 @@
 
     <TextView
         android:id="@+id/gasTextView"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_row="0"
         android:paddingLeft="@dimen/textview_padding"
         android:paddingRight="@dimen/textview_padding"
         android:paddingTop="@dimen/textview_padding"
+        android:layout_gravity="fill_horizontal"
         android:text="@string/gas_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
+    <TextView
+        android:id="@+id/gasValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_gravity="fill_horizontal"
+        android:paddingEnd="@dimen/textview_padding"
+        android:paddingStart="@dimen/textview_padding"
+        android:gravity="end" />
+
     <SeekBar
         android:id="@+id/gasSeekBar"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:progress="1"
         android:max="10"
+        android:layout_gravity="fill_horizontal"
         android:layout_row="1"
-        android:layout_column="0"/>
+        android:layout_column="0"
+        android:layout_columnSpan="2"/>
 
     <TextView
         android:id="@+id/ethanolTextView"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_row="2"
@@ -42,19 +56,34 @@
         android:text="@string/ethanol_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
+    <TextView
+        android:id="@+id/ethanolValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:layout_gravity="fill_horizontal"
+        android:paddingEnd="@dimen/textview_padding"
+        android:paddingStart="@dimen/textview_padding"
+        android:gravity="end" />
+
     <SeekBar
         android:id="@+id/ethanolSeekBar"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:progress="1"
+        android:layout_gravity="fill_horizontal"
+        android:progress="0"
         android:max="10"
         android:layout_row="3"
-        android:layout_column="0"/>
+        android:layout_column="0"
+        android:layout_columnSpan="2"/>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/fuelidealTextInputLayout"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnSpan="2"
         android:layout_row="4"
         android:layout_column="0"
         android:paddingLeft="@dimen/textview_padding"
@@ -71,13 +100,15 @@
 
     <ImageView
         android:id="@+id/fuelImageView"
-        android:layout_width="fill_parent"
-        android:layout_height="@android:dimen/thumbnail_height"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="fill_horizontal"
         android:layout_column="0"
+        android:layout_columnSpan="2"
         android:layout_row="5"
         android:contentDescription="@string/gas"
         android:paddingLeft="@dimen/textview_padding"
         android:paddingRight="@dimen/textview_padding"
-        app:srcCompat="@drawable/gas" />
+        android:src="@drawable/gas"/>
 
 </GridLayout>

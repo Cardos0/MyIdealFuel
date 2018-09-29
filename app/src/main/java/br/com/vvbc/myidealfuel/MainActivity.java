@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         fuelIdealTextInputEditText = findViewById(R.id.fuelIdealTextInputEditText);
         fuelImageView = findViewById(R.id.fuelImageView);
+        calcFuelIdeal();
 
         SeekBar gasSeekBar = findViewById(R.id.gasSeekBar);
         gasSeekBar.setOnSeekBarChangeListener(

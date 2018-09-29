@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:columnCount="1"
+    android:columnCount="2"
     android:rowCount="6"
     android:useDefaultMargins="true">
 
@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_row="0"
-        android:paddingHorizontal="@dimen/textview_padding"
+        android:paddingLeft="@dimen/textview_padding"
+        android:paddingRight="@dimen/textview_padding"
         android:paddingTop="@dimen/textview_padding"
         android:text="@string/gas_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
@@ -35,7 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_row="2"
-        android:paddingHorizontal="@dimen/textview_padding"
+        android:paddingLeft="@dimen/textview_padding"
+        android:paddingRight="@dimen/textview_padding"
         android:paddingTop="@dimen/textview_padding"
         android:text="@string/ethanol_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
@@ -55,14 +57,15 @@
         android:layout_height="wrap_content"
         android:layout_row="4"
         android:layout_column="0"
-        android:paddingHorizontal="@dimen/textview_padding">
+        android:paddingLeft="@dimen/textview_padding"
+        android:paddingRight="@dimen/textview_padding">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/fuelIdealTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/fuel_label"
-            android:text="Gas"
+            android:text="@string/gas"
             android:focusable="false"/>
     </android.support.design.widget.TextInputLayout>
 
@@ -72,8 +75,9 @@
         android:layout_height="@android:dimen/thumbnail_height"
         android:layout_column="0"
         android:layout_row="5"
-        android:contentDescription="Gas"
-        android:paddingHorizontal="@dimen/textview_padding"
+        android:contentDescription="@string/gas"
+        android:paddingLeft="@dimen/textview_padding"
+        android:paddingRight="@dimen/textview_padding"
         app:srcCompat="@drawable/gas" />
 
 </GridLayout>
